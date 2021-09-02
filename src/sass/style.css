@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.back {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, brown), to(#1f0303));
+  background: linear-gradient(to bottom, brown 10%, #1f0303);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.back .container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: 1s, width 1s, height 1s;
+  transition: 1s, width 1s, height 1s;
+  background-color: #aa5757;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-delay: 1s, 1s, 1s;
+          transition-delay: 1s, 1s, 1s;
+  border: 1px solid rgba(255, 255, 255, 0.151);
+}
+
+.back .container img {
+  position: absolute;
+  width: 200px;
+  -webkit-transition: 1s, scale 1s, -webkit-transform 1s;
+  transition: 1s, scale 1s, -webkit-transform 1s;
+  transition: 1s, scale 1s, transform 1s;
+  transition: 1s, scale 1s, transform 1s, -webkit-transform 1s;
+  -webkit-transition: 1s, scale 1s, transform 1s;
+  -moz-transition: 1s, scale 1s, transform 1s;
+  -ms-transition: 1s, scale 1s, transform 1s;
+  -o-transition: 1s, scale 1s, transform 1s;
+  -webkit-transition-delay: 1s,1s,1s;
+          transition-delay: 1s,1s,1s;
+}
+
+.back .container:hover {
+  -webkit-transition-delay: 0s, 0s, 0s;
+          transition-delay: 0s, 0s, 0s;
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.103);
+  -webkit-backdrop-filter: blur(150px);
+          backdrop-filter: blur(150px);
+  border: 1px solid rgba(255, 255, 255, 0.151);
+}
+
+.back .container:hover img {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  transform: scale(2.2) translateX(50px);
+  -webkit-transform: scale(2.2) translateX(50px);
+  -moz-transform: scale(2.2) translateX(50px);
+  -ms-transform: scale(2.2) translateX(50px);
+  -o-transform: scale(2.2) translateX(50px);
+}
+
+.back .container .texts {
+  position: absolute;
+  padding-right: 120px;
+  opacity: 0;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  transition: opacity 1s, transform 1s, -webkit-transform 1s;
+  -webkit-transition: opacity 1s, transform 1s;
+  -moz-transition: opacity 1s, transform 1s;
+  -ms-transition: opacity 1s, transform 1s;
+  -o-transition: opacity 1s, transform 1s;
+  -webkit-transition-delay: 0s, 0s;
+          transition-delay: 0s, 0s;
+  -webkit-transform: translateX(150px);
+  -moz-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  -o-transform: translateX(100px);
+  color: white;
+  text-align: left;
+}
+
+.back .container .texts .head {
+  font-size: 24px;
+  font-family: 'Quicksand', sans-serif;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  margin-left: -15px;
+}
+
+.back .container .texts button {
+  padding: 10px 25px 10px 25px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  margin-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-size: xx-small;
+}
+
+.back .container .texts button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+}
+
+.back .container .texts .body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: small;
+}
+
+.back .container:hover .texts {
+  -webkit-transition-delay: 1s, 0.5s;
+          transition-delay: 1s, 0.5s;
+  opacity: 1;
+  transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -o-transform: translateX(-50px);
+}
+/*# sourceMappingURL=style.css.map */
